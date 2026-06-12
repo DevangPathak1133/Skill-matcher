@@ -3,8 +3,6 @@ from werkzeug.utils import secure_filename
 import tempfile
 import os
 import re
-from sklearn.feature_extraction.text import TfidfVectorizer
-from sklearn.metrics.pairwise import cosine_similarity
 from pdfminer.high_level import extract_text
 import docx
 
@@ -93,10 +91,7 @@ def extract_keywords(text):
     return sorted(list(found_keywords))
 
 
-def get_top_n_words(tfidf, feature_names, doc_index, n=10):
-    row = tfidf[doc_index].toarray().ravel()
-    topn_ids = row.argsort()[-n:][::-1]
-    return [feature_names[i] for i in topn_ids if row[i] > 0]
+
 
 
 @app.route('/')
