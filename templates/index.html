@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Skills Matcher</title>
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Skills Matching</h1>
+    <form id="upload-form">
+      <label>Upload Job Descriptions (multiple):</label>
+      <input type="file" id="jds" name="jds" multiple accept=".pdf,.docx,.txt">
+      <label>Upload Resumes (multiple):</label>
+      <input type="file" id="resumes" name="resumes" multiple accept=".pdf,.docx,.txt">
+      <button type="submit">Match</button>
+    </form>
+
+    <div id="results"></div>
+  </div>
+  <script src="/static/app.js"></script>
+</body>
+</html>

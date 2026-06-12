@@ -1,0 +1,22 @@
+body{font-family:Arial,Helvetica,sans-serif;background:#f7f7f7;color:#222}
+.container{max-width:1100px;margin:40px auto;padding:20px;background:#fff;border-radius:6px;box-shadow:0 2px 8px rgba(0,0,0,.06)}
+h1{margin-top:0;color:#333}
+h2{color:#444;margin-top:24px;border-bottom:2px solid #007bff;padding-bottom:8px}
+label{display:block;margin:12px 0 6px;font-weight:bold}
+input[type=file]{display:block;padding:6px;margin:6px 0}
+button{margin-top:12px;padding:10px 16px;background:#007bff;color:#fff;border:none;border-radius:4px;cursor:pointer;font-size:1em}
+button:hover{background:#0056b3}
+
+.job-section{margin:24px 0;padding:16px;background:#f9f9f9;border-left:4px solid #007bff;border-radius:4px}
+.required-skills{margin:12px 0;padding:10px;background:#e7f3ff;border-radius:4px;font-size:0.95em}
+
+table{width:100%;border-collapse:collapse;margin-top:12px}
+th{background:#007bff;color:#fff;padding:10px;text-align:left;font-weight:bold}
+td{border:1px solid #ddd;padding:10px;text-align:left;word-break:break-word}
+tr:nth-child(even){background:#f9f9f9}
+
+.skill-badge{display:inline-block;padding:4px 8px;margin:2px;border-radius:3px;font-size:0.85em;font-weight:500}
+.skill-badge.success{background:#d4edda;color:#155724}
+.skill-badge.warning{background:#fff3cd;color:#856404}
+.skill-badge.info{background:#d1ecf1;color:#0c5460}
+
